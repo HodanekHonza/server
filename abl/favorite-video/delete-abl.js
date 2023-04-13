@@ -15,24 +15,24 @@ const schema = {
 
 async function deleteAbl(req, res) {
   try {
-    if (!userDao) {
-      throw new Error("Failed to load user data");
-    }
-
-    const name = req.params.name;
-    const videoId = req.params.videoId;
+    const { name, videoId } = req.params;
 
     const user = await userDao.getUser(name);
 
-    if (user && user.favoriteVideoIds.includes(videoId)) {
-      const updatedUser = await userDao.removeFavoriteVideo(name, videoId);
-      res.json(updatedUser);
-    } else {
-      res.status(404).send({ errorMessage: `Video with ID ${videoId} not found for user ${name}` });
+    if (!user) {
+      return res.status(404).json({ errorMessage: `User with name ${name} not found` });
     }
+
+    if (!user.favoriteVideoIds.includes(videoId)) {
+      return res.status(404).json({ errorMessage: `Video with ID ${videoId} not found for user ${name}` });
+    }
+
+    const updatedUser = await userDao.removeFavoriteVideo(name, videoId);
+    res.json(updatedUser);
   } catch (e) {
     res.status(500).send(e);
   }
 }
+
 
 module.exports = deleteAbl;
