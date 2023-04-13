@@ -32,7 +32,29 @@ class UserDao {
   async getUser(name) {
     const userList = await this._loadAllUsers();
     return userList.find((user) => user.name.toLowerCase() === name.toLowerCase());
-}
+  }
+
+  // Inside the UserDao class
+
+  async removeFavoriteVideo(name, videoId) {
+    const userList = await this._loadAllUsers();
+    const userIndex = userList.findIndex((user) => user.name === name);
+
+    if (userIndex < 0) {
+      throw new Error(`User with name ${name} does not exist`);
+    }
+
+    const user = userList[userIndex];
+    const videoIndex = user.favoriteVideoIds.indexOf(videoId);
+
+    if (videoIndex > -1) {
+      user.favoriteVideoIds.splice(videoIndex, 1);
+      await this._saveUsers(userList);
+    }
+
+    return user;
+  }
+
 
 
   async addFavoriteVideo(name, videoId) {

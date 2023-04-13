@@ -1,8 +1,8 @@
 const path = require("path");
 const Ajv = require("ajv").default;
-const FavoriteVideoDao = require("../../dao/user-dao");
-const dao = new FavoriteVideoDao(
-  path.join(__dirname, "..", "..", "storage", "favoritevideos.json")
+const UserDao = require("../../dao/user-dao");
+const userDao = new UserDao(
+  path.join(__dirname, "..", "..", "storage", "users.json")
 );
 
 const schema = {
@@ -15,8 +15,8 @@ const schema = {
 
 async function deleteAbl(req, res) {
   try {
-    if (!userDao || !videoDao) {
-      throw new Error("Failed to load user or video data");
+    if (!userDao) {
+      throw new Error("Failed to load user data");
     }
 
     const name = req.params.name;
@@ -34,7 +34,5 @@ async function deleteAbl(req, res) {
     res.status(500).send(e);
   }
 }
-
-
 
 module.exports = deleteAbl;

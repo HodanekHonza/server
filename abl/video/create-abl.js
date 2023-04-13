@@ -10,10 +10,10 @@ let schema = {
     properties: {
         url: { type: "string" },
         name: { type: "string" },
-        creator: { type: "string" },
+        author: { type: "string" },
         length: { type: "number" },
-        dateofcreation: { type: "number" },
-        topic: { type: "string" },
+        dateofrelease: { type: "number" },
+        genre: { type: "string" },
         description: { type: "string" },
     },
     required: ["url", "name"],
