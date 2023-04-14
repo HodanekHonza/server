@@ -1,82 +1,42 @@
 [
   {
     "url": "https://youtube.com",
-    "name": "michael",
-    "author": "string",
-    "length": 25,
-    "dateofrelease": 12052001,
-    "genre": "science",
-    "description": "chuckleallday",
-    "id": "5c720357gcf07554"
-  },
-  {
-    "url": "https://youtube.com",
-    "name": "samantha",
-    "author": "string",
-    "length": 18,
+    "name": "Revolutionary Gadget Unveiling",
+    "author": "Lucas Hartman",
+    "length": 10,
     "dateofrelease": 15062000,
     "genre": "technology",
-    "description": "giggleandgrin",
-    "id": "4b610246fbf96443"
+    "description": "Witness the unveiling of a game-changing gadget that promises to redefine modern technology. Get a first-hand look at its innovative features and potential impact on the industry.",
+    "id": "5a720381cdf97153"
   },
   {
     "url": "https://youtube.com",
-    "name": "john",
-    "author": "string",
-    "length": 22,
-    "dateofrelease": 14071999,
-    "genre": "war",
-    "description": "hahahahahah",
-    "id": "3a590125eea85332"
-  },
-  {
-    "url": "youtube.com",
-    "name": "tvoje mamka",
-    "creator": "string",
-    "length": 222,
-    "dateofcreation": 14071999,
-    "topic": "war",
-    "description": "hahahahahah",
-    "id": "26141c11d6ce5938"
-  },
-  {
-    "url": "youtube.com",
-    "name": "mother",
-    "creator": "string",
-    "length": 222,
-    "dateofcreation": 14071999,
-    "topic": "war",
-    "description": "hahahahahah",
-    "id": "7d1d465c514dc379"
-  },
-  {
-    "url": "youtube.com",
-    "name": "dad",
-    "author": "string",
-    "length": 222,
-    "dateofrelease": 14071999,
-    "genere": "war",
-    "description": "hahahahahah",
-    "id": "5f0a6bb8be58eb6e"
+    "name": "Electric Car Revolution",
+    "author": "Oscar Martinez",
+    "length": 28,
+    "dateofrelease": 15062000,
+    "genre": "technology",
+    "description": "Dive into the electric car revolution as we uncover the latest advancements in eco-friendly transportation. Discover the top electric car models and their unique features.",
+    "id": "7d940623eef39765"
   },
   {
     "url": "https://youtube.com",
-    "name": "xyasd",
-    "author": "string",
-    "length": 222,
-    "dateofrelease": 14071999,
-    "genre": "war",
-    "description": "hahahahahah",
-    "id": "7c54c2040d40ffac"
+    "name": "3D Printing Magic",
+    "author": "Ava Robinson",
+    "length": 34,
+    "dateofrelease": 15062000,
+    "genre": "technology",
+    "description": "Unravel the magic of 3D printing as we explore its vast applications and potentials. Watch a live demonstration of a 3D printer creating intricate designs and structures.",
+    "id": "8ea50629fff8a876"
   },
   {
     "url": "https://youtube.com",
-    "name": "dwqdqwd",
-    "author": "string",
-    "length": 222,
-    "dateofrelease": 14071999,
-    "genre": "war",
-    "description": "hahahahahah",
-    "id": "f870bf17c588a25a"
+    "name": "Future of Virtual Reality",
+    "author": "Ethan Lewis",
+    "length": 180,
+    "dateofrelease": 15062000,
+    "genre": "technology",
+    "description": "Immerse yourself in the fascinating world of virtual reality and its limitless possibilities. Learn about the latest VR headsets and how they're shaping the future of entertainment.",
+    "id": "9fb6172afff9b987"
   }
 ]

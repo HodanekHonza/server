@@ -62,16 +62,15 @@ class VideoDao {
 
   async deleteVideo(id) {
     let videolist = await this._loadAllVideos();
-    console.log("Original video list:", videolist);
+
     const videoIndex = videolist.findIndex((b) => b.id === id);
-    console.log("Index of video to delete:", videoIndex);
+
     if (videoIndex >= 0) {
       videolist.splice(videoIndex, 1);
     } else {
       console.log("Video not found, not deleting.");
     }
     await wf(this._getStorageLocation(), JSON.stringify(videolist, null, 2));
-    console.log("Updated video list:", videolist);
     return {};
   }
   

@@ -1,17 +1,17 @@
 const path = require("path");
-const Ajv = require("ajv").default;
+// const Ajv = require("ajv").default;
 const UserDao = require("../../dao/user-dao");
 const userDao = new UserDao(
   path.join(__dirname, "..", "..", "storage", "users.json")
 );
 
-const schema = {
-  type: "object",
-  properties: {
-    id: { type: "string" },
-  },
-  required: ["id"],
-};
+// const schema = {
+//   type: "object",
+//   properties: {
+//     id: { type: "string" },
+//   },
+//   required: ["id"],
+// };
 
 async function deleteAbl(req, res) {
   try {
