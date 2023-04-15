@@ -1,6 +1,5 @@
 const path = require("path");
 const UserDao = require("../../dao/user-dao");
-const VideoDao = require("../../dao/video-dao");
 const Ajv = require("ajv");
 
 const ajv = new Ajv();
@@ -14,7 +13,7 @@ const createSchema = {
 };
 
 let userDao;
-let videoDao;
+
 
 try {
   userDao = new UserDao(
@@ -24,13 +23,7 @@ try {
   console.error("Failed to load users.json:", e);
 }
 
-try {
-  videoDao = new VideoDao(
-    path.join(__dirname, "..", "..", "storage", "videos.json")
-  );
-} catch (e) {
-  console.error("Failed to load videos.json:", e);
-}
+
 //here its diff
 async function CreateAbl(req, res) {
   try {
