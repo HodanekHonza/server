@@ -38,5 +38,35 @@
     "genre": "technology",
     "description": "Immerse yourself in the fascinating world of virtual reality and its limitless possibilities. Learn about the latest VR headsets and how they're shaping the future of entertainment.",
     "id": "9fb6172afff9b987"
+  },
+  {
+    "url": "https://youtube.com",
+    "name": "The Rise of Quantum Computing",
+    "author": "Sophia Turner",
+    "length": 24,
+    "dateofrelease": 15062000,
+    "genre": "technology",
+    "description": "Explore the emerging field of quantum computing and its potential to revolutionize computing as we know it. Learn how quantum computers work and the problems they can solve.",
+    "id": "1ac71830f10ac098"
+  },
+  {
+    "url": "https://youtube.com",
+    "name": "Smart Cities: The Future of Urban Living",
+    "author": "James Adams",
+    "length": 45,
+    "dateofrelease": 15062000,
+    "genre": "technology",
+    "description": "Discover the concept of smart cities and how they're changing urban living with innovative technologies. Learn about the infrastructure and systems that make a city smart and sustainable.",
+    "id": "2bd82931f11bd109"
+  },
+  {
+    "url": "https://youtube.com",
+    "name": "The Power of Artificial Intelligence",
+    "author": "Olivia Johnson",
+    "length": 56,
+    "dateofrelease": 15062000,
+    "genre": "technology",
+    "description": "Dive into the world of artificial intelligence and explore its vast potential across various industries. Understand the capabilities of AI and how it's transforming our daily lives.",
+    "id": "3ce93a32f12ce21a"
   }
 ]

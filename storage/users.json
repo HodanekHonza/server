@@ -1,6 +1,11 @@
 [
   {
     "name": "John",
-    "favoriteVideoIds": []
+    "favoriteVideoIds": [
+      "5a720381cdf97153",
+      "8ea50629fff8a876",
+      "7d940623eef39765",
+      "9fb6172afff9b987"
+    ]
   }
 ]
