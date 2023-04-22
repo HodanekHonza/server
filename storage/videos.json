@@ -58,15 +58,5 @@
     "genre": "technology",
     "description": "Discover the concept of smart cities and how they're changing urban living with innovative technologies. Learn about the infrastructure and systems that make a city smart and sustainable.",
     "id": "2bd82931f11bd109"
-  },
-  {
-    "url": "https://youtube.com",
-    "name": "The Power of Artificial Intelligence",
-    "author": "Olivia Johnson",
-    "length": 56,
-    "dateofrelease": 15062000,
-    "genre": "technology",
-    "description": "Dive into the world of artificial intelligence and explore its vast potential across various industries. Understand the capabilities of AI and how it's transforming our daily lives.",
-    "id": "3ce93a32f12ce21a"
   }
 ]
