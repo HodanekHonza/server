@@ -16,13 +16,13 @@ class VideoDao {
 
   async createVideo(video) {
     let videolist = await this._loadAllVideos();
-    let currentSubject = videolist.find(
+    let currentVideo = videolist.find(
         (item) => item.name === video.name
     );
 
     // Check if the name already exists in the database
-    if (currentSubject) {
-      throw `subject with name ${video.name} already exists in db`;
+    if (currentVideo) {
+      throw `video with name ${video.name} already exists in db`;
     }
 
     // Generate a unique ID
@@ -42,7 +42,7 @@ class VideoDao {
 
   async getVideo(id) {
     let videolist = await this._loadAllVideos();
-    const result = videolist.find((b) => b.id === id);
+    const result = videolist.find((video) => video.id === id);
     return result;
   }
 

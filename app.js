@@ -4,6 +4,7 @@ const cors = require("cors");
 
 const videoRouter = require("./controller/video-controller");
 const favoriteVideoRouter = require("./controller/favorite-video-controller");
+const topicsRouter = require("./controller/topics-controller");
 const { addAbortSignal } = require("stream");
 
 //inicializace nového Express.js serveru
@@ -24,6 +25,7 @@ app.get("/", (req, res) => {
 
 app.use("/video", videoRouter);
 app.use("/favoritevideo", favoriteVideoRouter);
+app.use("/topics", topicsRouter);
 
 
 app.get("/*", (req, res) => {

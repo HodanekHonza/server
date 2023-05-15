@@ -12,7 +12,7 @@ let schema = {
         name: { type: "string" },
         author: { type: "string" },
         length: { type: "number" },
-        dateofrelease: { type: "number" },
+        dateofrelease: { type: "string" },
         genre: { type: "string" },
         description: { type: "string" },
     },
