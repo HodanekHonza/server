@@ -2,6 +2,8 @@ School Video Bookmarking App
 
 This is a school project for a video bookmarking app that allows students to save and organize video information (URL, name, etc.) for later use and study. The app also provides the ability to favorite videos for quick access. The frontend is built using React.js, and the backend is powered by Node.js and Express.js.
 
+this is a backend-part of the project - it uses 3 layer architecture. controler/abl/dao and dao is connected to json. will add db in next projects.:)
+
 Features
 
 Add, edit, and delete video information (URL, name, etc.) Favorite videos for quick access Search and filter saved videos Responsive design for desktop and mobile devices Installation
