@@ -6,8 +6,6 @@ Features
 
 Add, edit, and delete video information (URL, name, etc.) Favorite videos for quick access Search and filter saved videos Responsive design for desktop and mobile devices Installation
 
-Prerequisites Node.js (v14 or higher recommended) npm (v7 or higher recommended) Clone the repository bash Copy code git clone https://github.com/yourusername/school-video-bookmarking-app.git cd school-video-bookmarking-app Install dependencies Backend
-
 bash
 
 cd backend npm install Frontend
