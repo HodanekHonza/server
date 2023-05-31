@@ -29,6 +29,8 @@ class UserDao {
     return newUser;
   }
 
+  
+
   async getUser(name) {
     const userList = await this._loadAllUsers();
     return userList.find((user) => user.name.toLowerCase() === name.toLowerCase());
@@ -70,7 +72,6 @@ class UserDao {
       user.favoriteVideoIds.push(videoId);
       await this._saveUsers(userList);
     }
-
     return user;
   }
 

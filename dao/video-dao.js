@@ -50,7 +50,7 @@ class VideoDao {
     let videolist = await this._loadAllVideos();
     const videoIndex = videolist.findIndex((b) => b.id === video.id);
     if (videoIndex < 0) {
-      throw new Error(`subject with given id ${video.id} does not exists`);
+      throw new Error(`Video with given id ${video.id} does not exists`);
     } else {
       videolist[videoIndex] = {
         ...videolist[videoIndex],

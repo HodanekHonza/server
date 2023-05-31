@@ -16,7 +16,7 @@ let schema = {
         genre: { type: "string" },
         description: { type: "string" },
     },
-    required: ["url", "name"],
+    required: ["url", "name", "dateofrelease","genre"],
 };
 
 async function CreateAbl(req, res) {
@@ -35,7 +35,7 @@ async function CreateAbl(req, res) {
             });
         }
     } catch (e) {
-        if (e.includes("subject with name ")) {
+        if (e.includes("Video with name ")) {
             res.status(400).send({ errorMessage: e, params: req.body });
         } else {
             res.status(500).send(e);
